@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link type="text/css" rel="stylesheet" href="./style.css"> 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  
+<div class="row">
+  <div class="container-fluid main">
+    <div class="col-xs-5 no-pad">
+      <div class="people">
+        <div class="user">
+          <div class="user-item"> 
+            <img id="agent-pic" class="pull-left" src="http://www.thesoundarchive.com/images/Tiles/archer.png" alt="" />
+            <div class="pull-left">
+              <p class="name">Agent Archer</p>
+              <p class="active">active</p>
+            </div>
+          </div>
+        </div>
+        <div class="list-head">
+          <p>Active Conversations</p>
+        </div>
+        <div id="channel-list">
+          <div class="list-item active">
+            <p class="pull-left">General</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-7">
+      <div id="messages">
+         <div class="chat-content">
+            <p class="text-center"><strong>Today</strong> 1:45 am</p>
+          </div>
+      </div>
+      <div id="input-panel">
+        <span><input id="chat-input" class="form-control" type="text" placeholder="Type message..." /></span>
+          
+        <button id="btn-chat">Send</button>
+        </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="https://media.twiliocdn.com/sdk/js/chat/v1.0/twilio-chat.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
